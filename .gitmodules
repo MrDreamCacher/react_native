@@ -1,0 +1,9 @@
+[submodule "login"]
+	path = login
+	url = https://github.com/MrDreamCacher/Login_rn.git
+[submodule "theme"]
+	path = theme
+	url = https://github.com/MrDreamCacher/Theme_rn.git
+[submodule "common"]
+	path = common
+	url = https://github.com/MrDreamCacher/Common_rn.git

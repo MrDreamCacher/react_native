@@ -1,0 +1,17 @@
+{
+  "name": "react_native_zsq",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "./ModuleParser && node node_modules/react-native/local-cli/cli.js start",
+    "build_ios": "echo ios",
+    "build_android": "./moduleparser && node --max-old-space-size=4096 node_modules/react-native/local-cli/cli.js bundle --entry-file index.js --platform android --dev false --bundle-output ../app/src/main/assets/index.android.bundle --assets-dest ../app/src/main/res/ --sourcemap-output /tmp/sourcemap.txt"
+  },
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-native": "^0.53.0",
+    "react-navigation": "^1.5.2",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0"
+  }
+}
