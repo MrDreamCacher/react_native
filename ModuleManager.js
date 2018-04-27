@@ -3,7 +3,8 @@
  * create by zhaoshengqi
  *
  */
-let modules = {};   // 从React Native根目录的build.cfg文件中读取的配置
+
+let modules = {};   // 从主工程根目录的module.json文件中读取的配置
 let modulesConfig = {};// 从Native层的模块化配置文件读取的配置
 
 function combineProperty(propertyName) {
@@ -53,7 +54,13 @@ function getScreen(moduleName, screenName) {
     return undefined;
 }
 
+function registerModule(moduleName, modulePage) {
+    modules[moduleName] = modulePage;
+}
+
 const ModuleManager = {
+    registerModule,
+    isModuleEnable,
     combineProperty,
     getMainScreen,
     getScreen
